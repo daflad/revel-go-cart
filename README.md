@@ -11,7 +11,7 @@ using this repo as the source repo
 
 Once created, ssh into your machine and get the IP (echo $OPENSHIFT_DIY_IP) 
 
-Insert into the marked position in the cont.app file, found under src/app/conf/
+Insert into the marked position in the app.conf file, found under src/app/conf/
 
 TODO
 ==============
