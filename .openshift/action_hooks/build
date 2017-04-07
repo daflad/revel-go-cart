@@ -2,7 +2,7 @@
 
 set -eo pipefail
 
-version=${GOVERSION:-1.3.3}
+version=${GOVERSION:-1.8}
 
 srcfile=${GOFILE:-go$VERSION.$OS-$ARCH.tar.gz}
 
