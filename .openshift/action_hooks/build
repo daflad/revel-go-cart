@@ -4,7 +4,7 @@ set -eo pipefail
 
 version=${GOVERSION:-1.8}
 
-srcfile=${GOFILE:-go$VERSION.$OS-$ARCH.tar.gz}
+srcfile=${GOFILE:-go$version.$(uname|tr A-Z a-z)-amd64.tar.gz}
 
 url=${GOURL:-https://storage.googleapis.com/golang/$srcfile}
 
