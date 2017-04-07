@@ -4,7 +4,7 @@ set -eo pipefail
 
 version=${GOVERSION:-1.3.3}
 
-srcfile=${GOFILE:-go$version.$(uname|tr A-Z a-z)-amd64.tar.gz}
+srcfile=${GOFILE:-go$VERSION.$OS-$ARCH.tar.gz}
 
 url=${GOURL:-https://storage.googleapis.com/golang/$srcfile}
 
@@ -14,7 +14,7 @@ if [ -d $dist/go ]; then
 	echo "Use Go $version."
 else
 	mkdir -p $dist
-	cd $dist	
+	cd $dist
 	echo "Installing Go $version"
 	echo "Download..."
 	curl -sO $url
